@@ -26,16 +26,14 @@ sudo apt-get install qgis -y --force-yes
 
 sudo apt-get install geoserver-geopackage -y --force-yes
 
-# Install the follwing package for enabling GDAL image formats support
-
-sudo apt-get install geoserver-gdal
-
-sudo service tomcat7 restart
-
 # Setting a password to 'opengeo' for the postgres user
 
 sudo -u postgres psql -U postgres -d postgres -c "alter user postgres with password 'opengeo';"
 
 # Installing Boundless SDK
 
-sudo apt-get install opengeo-weapp-sdk -y --forec-yes
+sudo apt-get install opengeo-weapp-sdk -y --force-yes
+
+# Installing midori browser
+
+sudo apt-get install midori
