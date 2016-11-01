@@ -1,8 +1,5 @@
 # Need to install wget & apt-transport-https for https
 sudo sed -i s:/archive.ubuntu.com:/cn.archive.ubuntu.com:g /etc/apt/sources.list
-# Fix bugs of dictionaries-common
-sudo sh /usr/share/debconf/fix_db.pl
-sudo dpkg-reconfigure dictionaries-common
 # Install xfce and virtualbox additions
 sudo apt-get update
 sudo apt-get install -y lxde virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
@@ -36,4 +33,4 @@ sudo apt-get install opengeo-weapp-sdk -y --force-yes
 
 # Installing midori browser
 
-sudo apt-get install midori
+sudo apt-get install midori -y --force-yes
