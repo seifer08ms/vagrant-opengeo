@@ -1,5 +1,4 @@
 # Need to install wget & apt-transport-https for https
-sudo sed -i s:/archive.ubuntu.com:/cn.archive.ubuntu.com:g /etc/apt/sources.list
 # Install xfce and virtualbox additions
 sudo apt-get update
 sudo apt-get install -y lxde virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
